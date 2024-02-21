@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="output/tailwind.css" />
+  </head>
+  <!-- bg-gradient-to-t from-pink-500 to-teal-500 h-screen -->
+  <body class="">
+    <header class="text-center font-bold text-5xl mb-4">Functonal</header>
+    <section class="container grid grid-cols-3 gap-5">
+      <div class="bg-gradient-to-t from-green-300 to-blue-300 rounded-lg p-8">
+        <p class="font-bold text-3xl">Deposit</p>
+        <p class="font-bold text-3xl mt-3">$<span class="deposit-container">00</span></p>
+      </div>
+      <div class="bg-gradient-to-t from-red-300 to-violet-300 rounded-lg p-8">
+        <p class="font-bold text-3xl">Withdraw</p>
+        <p class="font-bold text-3xl mt-3">$<span class="withdraw-container">00</span></p>
+      </div>
+      <div class="bg-gradient-to-t from-orange-300 to-rose-300 rounded-lg p-8">
+        <p class="font-bold text-3xl">Balance</p>
+        <p class="font-bold text-3xl mt-3">$<span class="balance">00</span></p>
+      </div>
+    </section>
+    <section class="container grid grid-cols-2 gap-5 mt-16">
+      <div class="bg-green-300 rounded-lg p-8">
+        <p class="font-bold text-3xl mb-4">Deposit</p>
+        <input class="w-3/4 p-2 rounded-lg block input-field" type="text" placeholder="$ Amount you deposit" />
+        <button class="bg-rose-400 px-4 py-2 rounded-lg mt-4 hover:bg-rose-500 hover:text-white duration-200 text-md font-bold Deposit-btn">
+          Deposit
+        </button>
+      </div>
+      <div class="bg-rose-300 rounded-lg p-7">
+        <p class="font-bold text-3xl mb-4">Withdraw</p>
+        <input class="w-3/4 p-2 rounded-lg block Withdraw-field" type="text" placeholder="$ Amount you withdraw" />
+        <button
+          class="bg-green-400 px-4 py-2 rounded-lg mt-4 hover:bg-green-500 hover:text-white duration-200 text-md font-bold Withdraw-btn"
+        >
+          Withdraw
+        </button>
+      </div>
+    </section>
+    <script src="utilities.js"></script>
+    <script src="dashbord.js"></script>
+  </body>
+</html>
